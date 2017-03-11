@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name manuf)(type KiCad)(uri "$(KIPRJMOD)/kicad-pcblib/manuf.pretty")(options "")(descr ""))
+)

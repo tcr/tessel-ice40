@@ -1,0 +1,21 @@
+entity Main {
+    in clk: bit,
+    out LED1: bit,
+    out LED2: bit,
+}
+
+impl Main {
+    // With a 12Mhz clock, count off every .5 seconds of ticks.
+    def mut index: uint{..2500};
+
+    // Declare a state change every positive clock edge.
+    on clk.posedge {
+        if index == 2500 - 1 {
+            LED1 <= !LED1;
+            LED2 <= !LED2;
+            index <= 0;
+        } else {
+            index <= index + 1;
+        }
+    }
+}
