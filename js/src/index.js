@@ -79,7 +79,7 @@ Promise.resolve()
   return write(CRESET, 0);
 })
 // 3. Wait a minimum of 200ns
-.then(delay(1000))
+.then(delay(1))
 .then(() => {
   console.log('Turning RESET on');
   // 4. Release CRESET_B or drive CRESET_B = 1

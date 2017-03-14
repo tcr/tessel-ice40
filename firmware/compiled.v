@@ -1,11 +1,12 @@
 module Main (
-    input [0:0] clk,
+    input clk,
     output LED1,
     output LED2
 );
-    reg [(15)-1:0] index = 0;
+    reg [(23)-1:0] index = 0;
     always @(posedge clk) begin
-        if ((index == (25000 - 1))) begin
+        if ((index == (6000000 - 1))) begin
+            LED1 <= ~(LED1);
             LED2 <= ~(LED2);
             index <= 0;
         end
@@ -13,6 +14,4 @@ module Main (
             index <= (index + 1);
         end
     end
-
-    assign LED1 = 1;
 endmodule

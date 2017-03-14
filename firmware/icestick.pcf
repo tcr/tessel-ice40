@@ -4,7 +4,7 @@
 # ##############################################################################
 
 # Clock
-set_io clk 90   # 12 MHz clock
+set_io clk 21   # 12 MHz clock
 
 # LEDs
 set_io --warn-no-port LED1 24  # red

@@ -6,11 +6,11 @@ entity Main {
 
 impl Main {
     // With a 12Mhz clock, count off every .5 seconds of ticks.
-    def mut index: uint{..2500};
+    def mut index: uint{..6000000};
 
     // Declare a state change every positive clock edge.
     on clk.posedge {
-        if index == 2500 - 1 {
+        if index == 6000000 - 1 {
             LED1 <= !LED1;
             LED2 <= !LED2;
             index <= 0;
