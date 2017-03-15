@@ -1,0 +1,8 @@
+# Changelog
+
+## tessel-fpga 0.3
+
+* Switched buck converter (poor choice) to [LD1117](http://www.mouser.com/ds/2/389/ld1117-974075.pdf) LDO converter. Component count stays the same (Cin 100nF input->GND, R 120ohm output->GND, Cout 10uF output->GND)
+* Widened traces everywhere, particularly to LDO
+* Connected Bank C to BANK_IO
+* Reassigned LED1 to 59 and LED2 to 74
