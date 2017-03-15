@@ -2,9 +2,9 @@
 
 FPGA module for Tessel.
 
-**Work in progress.** No boards made yet, but programming works!
+**Work in progress!** Boards have been made but nothing available as of now.
 
-![image](https://cloud.githubusercontent.com/assets/80639/23819270/f019a05e-05d1-11e7-9324-2881720a5d25.png)
+![image](https://cloud.githubusercontent.com/assets/80639/23933933/3fa84898-0918-11e7-9aa2-38e040c2df3a.png)
 
 ## License
 
